@@ -24,6 +24,10 @@ body{
     display: table-cell;
 }
 
+#mapita{
+  padding-left: 2vh;
+}
+
 h2{
     padding-bottom: 1em;
 }

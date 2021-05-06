@@ -7,14 +7,10 @@
   <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" >
-  
-  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-  
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+
 </head>
 <body>
   <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
@@ -22,7 +18,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     
-    <!-- logo -->
+    <!-- aqui va el logo -->
     <a class="navbar-brand" href="index.html">
       <img src="img/logo.png" width="30" height="30" alt="">
     </a>
@@ -45,43 +41,51 @@
       </ul>
     </div>
   </nav>
-<!-- cards -->
 <div class="main">
+<!-- mapa -->
   <div class="container">
-    <h2 class="page-section-heading text-center text-uppercase text-white">¿QUIÉNES SOMOS?</h2>   
-    <div class="row">       
-      <div class="col-md">        
-          <div class="card">
-            <img class="card-img-top" src="img/quienesomos.jpg">            
-            <div class="card-body">
-              <p class="card-text">DUOTECH nace con el propósito de convertirse en su aliado estratégico mediante la asesoría e implementación de soluciones integrales de tecnología de información para optimizar la productividad de su empresa.
-              </p>
-              <p class="card-text">
-                Nuestra visión y misión nos conllevan a entregar soluciones de acuerdo a las necesidades de cada empresa, por ello nos comprometemos con desarrollar servicios integrales y entregar valor en cada proyecto implementado.
-              </p>
-            </div>
-          </div>          
-      </div>
+    <div class="row">
+      <div class="col-md">
+        <iframe id="mapita" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.613920820132!2d-70.75462978495035!3d-33.51142058075657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dcd1fe0c7bab%3A0x4d17b82a7ba77488!2sDuoc%20UC%3A%20Sede%20Maipu!5e0!3m2!1ses!2scl!4v1620257741826!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-      <div class="col-md">        
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Visión</h4>
-              <p class="card-text">Ser reconocidos como parte de las empresas referentes de nuestros clientes en la generación de valor a través de la uso de las Tecnologías de la Información.
-              </p>
-              <h4 class="card-title">Misión</h4>
-              <p class="card-text">Dar soluciones integrales de Tecnologías de la Información que estén hechas a la medida de las necesidades de cada cliente con el fin de cumplir con los objetivos de su empresa.
-              </p>
-            </div>
-            <img class="card-img-bottom" src="img/quienessomos2.jpg">                        
-          </div>          
       </div>
+      <div class="col-md">
+        <div class="card">
+          <div class="card-body">
+            <!-- formulario -->
+<form action="Ejemplo.html" method="POST" name="datos">
+  <label for="lname">Nombre:</label> 
+  <input type="text" id="nom" name="nombre" value="" placeholder="Ingrese su nombre" required="" autofocus=""><br><br>
+  <label for="lgenero">Seleccione Género:</label> 
+  <input type="radio" id="hombre" name="genero" value="hombre">
+  <label for="lhombre">Hombre</label> 
+  <input type="radio" id="mujer" name="genero" value="mujer">
+  <label for="lmujer">Mujer</label> 
+  <input type="radio" id="otro" name="genero" value="otro">
+  <label for="lotro">Otro</label><br><br>
+  <label for="lcomida">Seleccione Motivo:</label><br>
+  <input type="checkbox" id="motivo1" name="motivo1" value="contratacion">
+  <label for="motivo1"> Contratación de servicios</label><br>
+  <input type="checkbox" id="motivo2" name="motivo2" value="soporte">
+  <label for="motivo2"> Soporte técnico</label><br>
+  <input type="checkbox" id="motivo3" name="motivo3" value="visita">
+  <label for="motivo3"> Solicitar visita</label><br>
+  <input type="checkbox" id="motivo4" name="motivo4" value="otra">
+  <label for="motivo4"> Otro</label><br>
+  <label for="email">Ingrese su email:</label>
+  <input type="email" id="mail" name="mail" required=""><br><br>
+  <input type="submit" value="Enviar">
+  <input type="reset" value="Limpiar">
+</form>
+<!-- fin formulario -->
+          </div>
+        </div>
+        
+      </div>
+    </div>
   </div>
 </div>
-</div>
-<div id="video" class="d-flex justify-content-center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/xMF2A8CsNiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<!-- footer -->
 <footer class="bg-dark text-center text-white">
   <div class="container">
       <ul class="list-unstyled">
