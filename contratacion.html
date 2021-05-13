@@ -39,41 +39,62 @@
           <a class="nav-link" href="contacto.html">Contacto</a>
         <li class="nav-item">
           <a class="nav-link" href="contratacion.html">Contratación</a>
-        </li>   
+        </li>    
       </ul>
     </div>
   </nav>
 <div class="main">
-<!-- mapa -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md">
-        <iframe id="mapita" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.613920820132!2d-70.75462978495035!3d-33.51142058075657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dcd1fe0c7bab%3A0x4d17b82a7ba77488!2sDuoc%20UC%3A%20Sede%20Maipu!5e0!3m2!1ses!2scl!4v1620257741826!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
+<!-- cards -->
+<div class="container">   
+    <div class="row">       
+      <div class="col-md">        
+          <div class="card">
+            <img class="card-img-top" src="img/contratacion.jpg">            
+            <div class="card-body">
+              <h4 class="card-title">CONTRATACIÓN DE SERVICIOS CERTIFICADOS</h4>
+            </div>
+          </div>          
       </div>
+      <!-- fin carta -->
       <div class="col-md">
         <div class="card">
           <div class="card-body">
             <!-- formulario -->
-<form action="Ejemplo.html" method="POST" name="datos">
-  <label for="lname">Nombre:</label> 
-  <input type="text" id="nom" name="nombre" value="" placeholder="Ingrese su nombre" required="" autofocus=""><br><br>
-  <label for="lgenero">Seleccione Género:</label> 
-  <input type="radio" id="hombre" name="genero" value="hombre">
-  <label for="lhombre">Hombre</label> 
-  <input type="radio" id="mujer" name="genero" value="mujer">
-  <label for="lmujer">Mujer</label> 
-  <input type="radio" id="otro" name="genero" value="otro">
-  <label for="lotro">Otro</label><br><br>
-  <label for="motivo">Motivo de Contacto:</label>
-  <textarea class="form-control" id="motivo" rows="3"></textarea><br>
-  <label for="numero">Ingrese su número de teléfono:</label>
-  <input type="numero" id="phone" name="phone" required=""><br><br>
-  <label for="email">Ingrese su email:</label>
-  <input type="email" id="mail" name="mail" required=""><br><br>
-  <input type="submit" value="Enviar">
-  <input type="reset" value="Limpiar">
-</form>
+            <select class="form-control form-control-lg"><br>
+              <option>Tipo de contratacion</option>
+              <option>Mantenimiento</option>
+              <option>Instalacion</option>
+              <option>Administracion de Redes</option>
+              <option>Otro</option>
+            </select><br>
+            <form action="Ejemplo.html" method="POST" name="datos">
+              <form>
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombres">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellidos">
+                            </div>
+                </div>
+              </form><br>
+              <form>
+                <div class="form-row">
+                  <div class="col-7">
+                    <input type="text" class="form-control" placeholder="Región">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Comuna">
+                  </div>
+                </div>
+              </form><br>
+              <label for="numero">Ingrese su número de teléfono:</label>
+              <input type="numero" id="phone" name="phone" required=""><br><br>
+              <label for="email">Ingrese su email:</label>
+              <input type="email" id="mail" name="mail" required=""><br><br>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Limpiar">
+            </form>
 <!-- fin formulario -->
           </div>
         </div>
