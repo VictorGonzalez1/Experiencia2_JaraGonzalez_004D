@@ -60,45 +60,48 @@
         <div class="card">
           <div class="card-body">
             <!-- formulario -->
-            <select class="form-control form-control-lg"><br>
-              <option>Tipo de contratacion</option>
-              <option>Mantenimiento</option>
-              <option>Instalacion</option>
-              <option>Administracion de Redes</option>
-              <option>Otro</option>
-            </select><br>
-            <form action="Ejemplo.html" method="POST" name="datos">
-              <form>
+            <form action="index.html" method="POST" name="datos">
+              <div class="col">
+                <div class="row">
+                  <select class="form-control form-control-lg"><br>
+                    <option>Tipo de contratacion</option>
+                    <option>Mantenimiento</option>
+                    <option>Instalacion</option>
+                    <option>Administracion de Redes</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+              </div><br>
                 <div class="row">
                   <div class="col">
-                    <input type="text" class="form-control" placeholder="Nombres">
+                    <input type="text" class="form-control" placeholder="Nombres" required="">
                   </div>
                   <div class="col">
-                    <input type="text" class="form-control" placeholder="Apellidos">
-                            </div>
+                    <input type="text" class="form-control" placeholder="Apellidos" required="">
+                  </div>
                 </div>
-              </form><br>
-              <form>
+              <br>
+              <label for="comentario">Comentarios:</label>
+              <textarea class="form-control" id="motivo" rows="2" required=""></textarea><br>
                 <div class="form-row">
                   <div class="col-7">
-                    <input type="text" class="form-control" placeholder="Región">
+                    <input type="text" class="form-control" placeholder="Región" required="">
                   </div>
                   <div class="col">
-                    <input type="text" class="form-control" placeholder="Comuna">
+                    <input type="text" class="form-control" placeholder="Comuna" required="">
                   </div>
                 </div>
-              </form><br>
-              <label for="numero">Ingrese su número de teléfono:</label>
-              <input type="numero" id="phone" name="phone" required=""><br><br>
+              <br>
               <label for="email">Ingrese su email:</label>
-              <input type="email" id="mail" name="mail" required=""><br><br>
+              <input class="form-control" type="email" id="mail" name="mail" required=""> <br>
+                <label><input type="checkbox"> Deseo recibir las últimas noticias de DUOTECH en mi correo.</label><br>
               <input type="submit" value="Enviar">
               <input type="reset" value="Limpiar">
             </form>
 <!-- fin formulario -->
+            </div>
           </div>
         </div>
-        
       </div>
     </div>
   </div>
