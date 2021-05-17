@@ -7,10 +7,12 @@
   <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" >
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
-
+  <script src="js/apiscript.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
@@ -58,22 +60,21 @@
 <form action="Ejemplo.html" method="POST" name="datos">
   <label for="lname">Nombre:</label> 
   <input type="text" id="nom" name="nombre" value="" placeholder="Ingrese su nombre" required="" autofocus=""><br>
-  <label for="lgenero">Seleccione Género:</label> 
+  <label for="lgenero">Género:</label> 
   <input type="radio" id="hombre" name="genero" value="hombre" checked>
   <label for="lhombre">Hombre</label> 
   <input type="radio" id="mujer" name="genero" value="mujer">
   <label for="lmujer">Mujer</label> 
   <input type="radio" id="otro" name="genero" value="otro">
   <label for="lotro">Otro</label><br>
-  <label for="lblNacion">Nacionalidad: </label>
-  <select for="listNacionalidad" class="form-control form-control-lg"><br>
-    <option>Chileno</option>
-    <option>Argentino</option>
-    <option>Peruano</option>
-    <option>Otro</option>
+  <label for="lblMotivo">Motivo: </label>
+  <select for="listMotivo" class="form-control form-control-lg"><br>
+    <option>Soporte</option>
+    <option>Negocios</option>
+    <option>Otras consultas</option>
   </select>
-  <label for="motivo">Motivo de Contacto:</label>
-  <textarea class="form-control" id="motivo" rows="3" required=""></textarea><br>
+  <label for="lblMensaje">Mensaje:</label>
+  <textarea class="form-control" id="mensaje" rows="3" required=""></textarea><br>
   <label for="numero">Ingrese su número de teléfono:</label>
   <input type="numero" id="phone" name="phone" required=""><br><br>
   <label for="email">Ingrese su email:</label>
@@ -82,14 +83,20 @@
   <input type="reset" value="Limpiar">
 </form>
 <!-- fin formulario -->
-
           </div>
+    </div>
         </div>
-        
+      </div>
+    </div>
+    <!-- info de API-->
+    <div class="container">
+      <div class="card" onmouseover="infoClima()">
+        <div class="card-body">
+          <span id="infoClima">Coloque el mouse encima para obtener información del clima</span>
+        </div>
       </div>
     </div>
   </div>
-</div>
 <!-- footer -->
 <footer class="bg-dark text-center text-white">
   <div class="container">
